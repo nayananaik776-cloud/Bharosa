@@ -1,17 +1,15 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import health, analyze, payment, recipient
-from .database import engine, Base
-
-# Create database tables
-Base.metadata.create_all(bind=engine)
+from backend.models import AnalysisRequest, AnalysisResponse
+from backend.risk_engine import evaluate_risk
 
 app = FastAPI(
-    title="Bharosa Backend",
-    description="Risk orchestration API for Bharosa Fraud Guardian",
+    title="Bharosa Fraud Guardian API",
+    description="Real-Time Payment Safety & Contextual Fraud Explainer Backend",
     version="1.0.0"
 )
 
+# Enable CORS for frontend integration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -20,7 +18,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(health.router)
-app.include_router(analyze.router)
-app.include_router(payment.router)
-app.include_router(recipient.router)
+@app.get("/")
+def health_check():
+    return {"status": "ok", "service": "Bharosa Fraud Guardian API"}
+
+@app.post("/api/analyze/full", response_model=AnalysisResponse)
+def analyze_full_payment(request: AnalysisRequest):
+    try:
+        response = evaluate_risk(request)
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

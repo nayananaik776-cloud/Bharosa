@@ -1,43 +1,48 @@
-from sqlalchemy import Column, Integer, String, Float, Boolean, JSON, DateTime
-from sqlalchemy.sql import func
-from .database import Base
+from typing import List, Optional
+from pydantic import BaseModel, Field
 
-class User(Base):
-    __tablename__ = "users"
-    id = Column(Integer, primary_key=True, index=True)
-    device_id = Column(String, unique=True, index=True)
-    language = Column(String, default="en")
+class Recipient(BaseModel):
+    name: str
+    upi_id: str
 
-class Recipient(Base):
-    __tablename__ = "recipients"
-    id = Column(Integer, primary_key=True, index=True)
-    recipient_id = Column(String, unique=True, index=True)
-    name = Column(String)
-    risk_score = Column(Integer, default=0)
-    reports_count = Column(Integer, default=0)
+class Transaction(BaseModel):
+    amount: float
+    type: str = Field(..., description="SEND or RECEIVE")
+    purpose: Optional[str] = None
 
-class Transaction(Base):
-    __tablename__ = "transactions"
-    id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer)
-    recipient_id = Column(String)
-    amount = Column(Float)
-    currency = Column(String)
-    direction = Column(String)
-    status = Column(String)
-    created_at = Column(DateTime(timezone=True), server_default=func.now())
+class Intent(BaseModel):
+    believed_action: Optional[str] = Field(None, description="SEND or RECEIVE")
+    promised_benefit: Optional[str] = None
+    promised_amount: Optional[float] = None
 
-class AnalysisEvent(Base):
-    __tablename__ = "analysis_events"
-    id = Column(Integer, primary_key=True, index=True)
-    transaction_id = Column(Integer, nullable=True)
-    risk_level = Column(String)
-    decision = Column(String)
-    signals = Column(JSON)
-    created_at = Column(DateTime(timezone=True), server_default=func.now())
+class PaymentHistoryItem(BaseModel):
+    amount: float
+    purpose: Optional[str] = None
 
-class ScamCase(Base):
-    __tablename__ = "scam_cases"
-    id = Column(Integer, primary_key=True, index=True)
-    description = Column(String)
-    pattern = Column(JSON)
+class AnalysisRequest(BaseModel):
+    message: str
+    recipient: Recipient
+    transaction: Transaction
+    intent: Optional[Intent] = None
+    payment_history: Optional[List[PaymentHistoryItem]] = Field(default_factory=list)
+
+class Signal(BaseModel):
+    code: str
+    severity: str
+    description: str
+
+class AnalysisDetails(BaseModel):
+    believed_action: str
+    actual_action: str
+    requested_amount: float
+    promised_amount: float
+    advance_payment_detected: bool
+    escalation_detected: bool
+
+class AnalysisResponse(BaseModel):
+    risk_level: str  # LOW, MEDIUM, HIGH, CRITICAL
+    action: str      # ALLOW, VERIFY, PAUSE
+    explanation: str
+    signals: List[Signal]
+    details: AnalysisDetails
+    voice_warning: Optional[str] = None
