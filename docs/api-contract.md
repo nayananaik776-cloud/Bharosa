@@ -14,7 +14,21 @@ This document specifies the REST API contract between client applications (inclu
 
 ## Endpoints
 
-### 1. Analyze Message / Notification
+### 1. Health Check
+- **URL**: `/api/health`
+- **Method**: `GET`
+- **Description**: Check if the backend is running.
+
+#### Response Payload (200 OK)
+```json
+{
+  "status": "healthy"
+}
+```
+
+---
+
+### 2. Analyze Message / Notification (v1 Endpoint)
 
 Analyzes incoming financial notification or message text to detect potential scam patterns, calculate risk scores, and generate clear, non-technical warnings in requested languages.
 
@@ -43,8 +57,6 @@ Analyzes incoming financial notification or message text to detect potential sca
 | `timestamp` | `string` | ISO 8601 UTC timestamp when notification arrived. |
 | `language` | `string` | Preferred language code for warnings (`en` or `hi`). |
 
----
-
 #### Response Payload Schema (200 OK)
 
 ```json
@@ -69,16 +81,80 @@ Analyzes incoming financial notification or message text to detect potential sca
 }
 ```
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `risk_score` | `number` | Floating point score between `0.0` (safe) and `1.0` (high risk). |
-| `risk_level` | `string` | `HIGH`, `MEDIUM`, `LOW`, or `SAFE`. |
-| `category` | `string` | Scam classification (e.g. `ADVANCE_FEE_SCAM`, `REFUND_SCAM`, `ACCOUNT_BLOCK_SCAM`, `QR_SCAM`, `SAFE_PAYMENT`). |
-| `is_scam` | `boolean` | `true` if risk requires user alert. |
-| `warning_title` | `object` | Dictionary containing simple localized title string (`en`, `hi`). |
-| `warning_message` | `object` | Non-technical explanation of the risk (`en`, `hi`). |
-| `action_required` | `string` | Recommended user action (`DO_NOT_PAY`, `DO_NOT_CLICK`, `VERIFY_FIRST`, `SAFE`). |
-| `explanation_audio_text` | `object` | Text optimized for Text-To-Speech (TTS) voice engines. |
+---
+
+### 3. Analyze Full Context
+- **URL**: `/api/analyze/full`
+- **Method**: `POST`
+- **Description**: Core endpoint to evaluate risk based on message text, transaction details, and user context.
+
+#### Request Payload
+```json
+{
+  "message_text": "Your ₹50,000 pension has been approved. Pay ₹2,000 verification fee to receive it.",
+  "transaction": {
+    "amount": 2000,
+    "currency": "INR",
+    "direction": "SEND",
+    "recipient_id": "demo_recipient_001",
+    "recipient_name": "Example Services",
+    "is_new_recipient": true
+  },
+  "user_context": {
+    "language": "hi",
+    "previous_related_payments": []
+  }
+}
+```
+
+#### Response Payload (200 OK)
+```json
+{
+  "risk_score": 85,
+  "risk_level": "HIGH",
+  "decision": "PAUSE",
+  "intent_analysis": {
+    "detected_intent": "RECEIVE",
+    "mismatch": true
+  },
+  "promise_analysis": {
+    "promised_amount": 50000,
+    "condition": "PAYMENT_FIRST"
+  },
+  "signals": ["ADVANCE_FEE_REQUEST", "INTENT_MISMATCH"],
+  "explanation": "Be careful. You are being asked to pay ₹2,000 first for a promised ₹50,000 benefit.",
+  "recommended_action": "Verify the recipient before proceeding.",
+  "voice_text": "Be careful. You are being asked to pay 2000 rupees first for a promised 50000 rupees benefit."
+}
+```
+
+---
+
+### 4. Analyze Message (Partial)
+- **URL**: `/api/analyze/message`
+- **Method**: `POST`
+- **Description**: Analyzes only the message content.
+
+---
+
+### 5. Analyze Transaction (Partial)
+- **URL**: `/api/analyze/transaction`
+- **Method**: `POST`
+- **Description**: Analyzes only the transaction context.
+
+---
+
+### 6. Recipient Check
+- **URL**: `/api/recipient/check`
+- **Method**: `POST`
+- **Description**: Check historical risk of a recipient.
+
+---
+
+### 7. Payment Simulation
+- **URL**: `/api/payment/simulate`
+- **Method**: `POST`
+- **Description**: Simulate the execution of a payment after analysis.
 
 ---
 

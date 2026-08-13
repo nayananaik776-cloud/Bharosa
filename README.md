@@ -3,9 +3,16 @@
 **TeamVX** | Build Bank FinTech Hackathon (Track 2 — Fraud Detection & Financial Crime Prevention, Problem #4: Real-Time Fraud Explainer)
 
 ## Overview
-Bharosa is a proactive payment-safety system designed especially for digitally vulnerable users (rural, first-time digital-payment users, elderly). Rather than analyzing only transaction amounts, Bharosa analyzes the **story and context** behind every transaction.
+Bharosa is a proactive payment-safety system designed especially for digitally vulnerable users (rural users, first-time digital-payment users, elderly, and users with limited digital/financial literacy). Rather than analyzing only transaction amounts, Bharosa analyzes the **story and context** behind every transaction.
 
-## Repository Structure
+## Repository Structure & Architecture
+- **backend/**: FastAPI backend, risk orchestration, and API.
+- **android/**: Android application acting as the guardian listener and UI.
+- **frontend/**: React + Vite simulated payment UI and judge demo.
+- **ml/**: ML and NLP models for signal extraction, intent engines, and intelligence.
+- **docs/**: Architecture & API Contracts.
+- **scripts/**: Utility & deployment scripts.
+
 ```
 bharosa-fraud-guardian/
 ├── backend/    # FastAPI Backend + Risk Orchestration (Member 1)
@@ -16,5 +23,7 @@ bharosa-fraud-guardian/
 └── scripts/    # Utility & deployment scripts
 ```
 
-## Module Setup (Frontend)
-See `frontend/README.md` for details on running the simulated payment demo and judge interface.
+## Development & Setup
+See module-specific documentation for details on running each part:
+- See `frontend/README.md` for details on running the simulated payment demo and judge interface.
+- See `android/` and `docs/api-contract.md` for Android Guardian listener and API details.
