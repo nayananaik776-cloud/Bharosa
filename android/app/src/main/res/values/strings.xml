@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bharosa Guardian</string>
+    <string name="service_name">Bharosa Notification Guardian</string>
+    <string name="tagline">Automatic Financial Fraud Protection</string>
+</resources>

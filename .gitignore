@@ -1,0 +1,31 @@
+*.iml
+.gradle
+/build
+/.idea
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.apk
+*.ap_
+*.dex
+*.class
+/bin
+/gen
+/out
+
+# Sensitive / environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+
+# Python cache / test outputs
+__pycache__/
+*.pyc
+*.pyo
