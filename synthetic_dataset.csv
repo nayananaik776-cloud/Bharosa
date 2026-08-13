@@ -1,0 +1,121 @@
+sample_id,scenario_type,message,amount,direction,recipient,is_new_recipient,history_count,claimed_action,actual_action,intent_mismatch,payment_before_benefit,escalation_level,true_risk_level,true_decision
+SYN_REFUND_001,refund_scam,"Your ₹5,000 refund has been approved. Scan this QR code to receive your money.",300.0,SEND,refund_scammer_0@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_002,refund_scam,"Amazon ₹1,500 refund issued. Receive payment in your account by scanning QR.",500.0,SEND,refund_scammer_1@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_003,refund_scam,Airtel recharge cashback ₹300 pending. Click to collect your refund now.,500.0,SEND,refund_scammer_2@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_004,refund_scam,"Your ₹5,000 refund has been approved. Scan this QR code to receive your money.",5000.0,SEND,refund_scammer_3@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_005,refund_scam,"Your ₹5,000 refund has been approved. Scan this QR code to receive your money.",3000.0,SEND,refund_scammer_4@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_006,refund_scam,Electricity overcharge refund ₹850 approved. Accept payment via UPI QR.,300.0,SEND,refund_scammer_0@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_007,refund_scam,"Your ₹5,000 refund has been approved. Scan this QR code to receive your money.",300.0,SEND,refund_scammer_1@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_008,refund_scam,Airtel recharge cashback ₹300 pending. Click to collect your refund now.,500.0,SEND,refund_scammer_2@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_009,refund_scam,"Your ₹5,000 refund has been approved. Scan this QR code to receive your money.",3000.0,SEND,refund_scammer_3@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_010,refund_scam,Airtel recharge cashback ₹300 pending. Click to collect your refund now.,5000.0,SEND,refund_scammer_4@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_011,refund_scam,Electricity overcharge refund ₹850 approved. Accept payment via UPI QR.,500.0,SEND,refund_scammer_0@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_012,refund_scam,Electricity overcharge refund ₹850 approved. Accept payment via UPI QR.,3000.0,SEND,refund_scammer_1@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_013,refund_scam,"Amazon ₹1,500 refund issued. Receive payment in your account by scanning QR.",300.0,SEND,refund_scammer_2@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_014,refund_scam,Airtel recharge cashback ₹300 pending. Click to collect your refund now.,5000.0,SEND,refund_scammer_3@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_015,refund_scam,Electricity overcharge refund ₹850 approved. Accept payment via UPI QR.,850.0,SEND,refund_scammer_4@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_016,refund_scam,"Amazon ₹1,500 refund issued. Receive payment in your account by scanning QR.",500.0,SEND,refund_scammer_0@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_017,refund_scam,Airtel recharge cashback ₹300 pending. Click to collect your refund now.,850.0,SEND,refund_scammer_1@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_018,refund_scam,"Your ₹5,000 refund has been approved. Scan this QR code to receive your money.",300.0,SEND,refund_scammer_2@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_019,refund_scam,Electricity overcharge refund ₹850 approved. Accept payment via UPI QR.,300.0,SEND,refund_scammer_3@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_020,refund_scam,"Amazon ₹1,500 refund issued. Receive payment in your account by scanning QR.",850.0,SEND,refund_scammer_4@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_021,refund_scam,"Amazon ₹1,500 refund issued. Receive payment in your account by scanning QR.",300.0,SEND,refund_scammer_0@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_022,refund_scam,Electricity overcharge refund ₹850 approved. Accept payment via UPI QR.,3000.0,SEND,refund_scammer_1@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_023,refund_scam,"Your ₹5,000 refund has been approved. Scan this QR code to receive your money.",1500.0,SEND,refund_scammer_2@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_024,refund_scam,"Your ₹5,000 refund has been approved. Scan this QR code to receive your money.",3000.0,SEND,refund_scammer_3@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_REFUND_025,refund_scam,"Amazon ₹1,500 refund issued. Receive payment in your account by scanning QR.",5000.0,SEND,refund_scammer_4@upi,True,0,RECEIVE,SEND,True,False,NONE,CRITICAL,PAUSE
+SYN_ADVANCE_001,advance_fee_scam,"Work from home job selected! Pay ₹1,000 registration fee to get your ₹25,000 monthly salary.",2000.0,SEND,govt_claim_fake_0@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_002,advance_fee_scam,"Congratulations! You won ₹1,00,000 KBC lottery. Pay ₹5,000 GST clearance tax to release prize.",2000.0,SEND,govt_claim_fake_1@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_003,advance_fee_scam,"Your ₹50,000 pension has been approved. Pay ₹2,000 verification fee to receive it.",2000.0,SEND,govt_claim_fake_2@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_004,advance_fee_scam,"Your ₹50,000 pension has been approved. Pay ₹2,000 verification fee to receive it.",2000.0,SEND,govt_claim_fake_3@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_005,advance_fee_scam,"Congratulations! You won ₹1,00,000 KBC lottery. Pay ₹5,000 GST clearance tax to release prize.",2000.0,SEND,govt_claim_fake_0@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_006,advance_fee_scam,"Work from home job selected! Pay ₹1,000 registration fee to get your ₹25,000 monthly salary.",2000.0,SEND,govt_claim_fake_1@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_007,advance_fee_scam,"Your ₹50,000 pension has been approved. Pay ₹2,000 verification fee to receive it.",2000.0,SEND,govt_claim_fake_2@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_008,advance_fee_scam,"Congratulations! You won ₹1,00,000 KBC lottery. Pay ₹5,000 GST clearance tax to release prize.",2000.0,SEND,govt_claim_fake_3@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_009,advance_fee_scam,"Your ₹50,000 pension has been approved. Pay ₹2,000 verification fee to receive it.",2000.0,SEND,govt_claim_fake_0@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_010,advance_fee_scam,"PM Kisan Yojna ₹10,000 grant sanctioned. Deposit ₹500 file processing fee immediately.",2000.0,SEND,govt_claim_fake_1@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_011,advance_fee_scam,"Work from home job selected! Pay ₹1,000 registration fee to get your ₹25,000 monthly salary.",2000.0,SEND,govt_claim_fake_2@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_012,advance_fee_scam,"PM Kisan Yojna ₹10,000 grant sanctioned. Deposit ₹500 file processing fee immediately.",2000.0,SEND,govt_claim_fake_3@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_013,advance_fee_scam,"Work from home job selected! Pay ₹1,000 registration fee to get your ₹25,000 monthly salary.",2000.0,SEND,govt_claim_fake_0@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_014,advance_fee_scam,"Congratulations! You won ₹1,00,000 KBC lottery. Pay ₹5,000 GST clearance tax to release prize.",2000.0,SEND,govt_claim_fake_1@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_015,advance_fee_scam,"Work from home job selected! Pay ₹1,000 registration fee to get your ₹25,000 monthly salary.",2000.0,SEND,govt_claim_fake_2@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_016,advance_fee_scam,"Work from home job selected! Pay ₹1,000 registration fee to get your ₹25,000 monthly salary.",2000.0,SEND,govt_claim_fake_3@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_017,advance_fee_scam,"Congratulations! You won ₹1,00,000 KBC lottery. Pay ₹5,000 GST clearance tax to release prize.",2000.0,SEND,govt_claim_fake_0@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_018,advance_fee_scam,"Work from home job selected! Pay ₹1,000 registration fee to get your ₹25,000 monthly salary.",2000.0,SEND,govt_claim_fake_1@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_019,advance_fee_scam,"Your ₹50,000 pension has been approved. Pay ₹2,000 verification fee to receive it.",2000.0,SEND,govt_claim_fake_2@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_020,advance_fee_scam,"Congratulations! You won ₹1,00,000 KBC lottery. Pay ₹5,000 GST clearance tax to release prize.",2000.0,SEND,govt_claim_fake_3@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_021,advance_fee_scam,"Congratulations! You won ₹1,00,000 KBC lottery. Pay ₹5,000 GST clearance tax to release prize.",2000.0,SEND,govt_claim_fake_0@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_022,advance_fee_scam,"Congratulations! You won ₹1,00,000 KBC lottery. Pay ₹5,000 GST clearance tax to release prize.",2000.0,SEND,govt_claim_fake_1@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_023,advance_fee_scam,"PM Kisan Yojna ₹10,000 grant sanctioned. Deposit ₹500 file processing fee immediately.",2000.0,SEND,govt_claim_fake_2@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_024,advance_fee_scam,"PM Kisan Yojna ₹10,000 grant sanctioned. Deposit ₹500 file processing fee immediately.",2000.0,SEND,govt_claim_fake_3@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ADVANCE_025,advance_fee_scam,"Work from home job selected! Pay ₹1,000 registration fee to get your ₹25,000 monthly salary.",2000.0,SEND,govt_claim_fake_0@upi,True,0,VERIFY,SEND,False,True,NONE,HIGH,VERIFY
+SYN_ESCALATION_001,escalation_scam,"Verification fee ₹2,000 paid. Now pay ₹5,000 income tax clearance fee.",7500.0,SEND,escalation_agent_0@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_002,escalation_scam,"Verification fee ₹2,000 paid. Now pay ₹5,000 income tax clearance fee.",10000.0,SEND,escalation_agent_1@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_003,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",7500.0,SEND,escalation_agent_2@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_004,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",10000.0,SEND,escalation_agent_0@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_005,escalation_scam,"Pay ₹5,000 customs GST charge to release your blocked prize package.",10000.0,SEND,escalation_agent_1@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_006,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",7500.0,SEND,escalation_agent_2@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_007,escalation_scam,"Verification fee ₹2,000 paid. Now pay ₹5,000 income tax clearance fee.",10000.0,SEND,escalation_agent_0@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_008,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",15000.0,SEND,escalation_agent_1@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_009,escalation_scam,"Pay ₹5,000 customs GST charge to release your blocked prize package.",15000.0,SEND,escalation_agent_2@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_010,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",10000.0,SEND,escalation_agent_0@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_011,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",7500.0,SEND,escalation_agent_1@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_012,escalation_scam,"Verification fee ₹2,000 paid. Now pay ₹5,000 income tax clearance fee.",10000.0,SEND,escalation_agent_2@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_013,escalation_scam,"Verification fee ₹2,000 paid. Now pay ₹5,000 income tax clearance fee.",15000.0,SEND,escalation_agent_0@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_014,escalation_scam,"Verification fee ₹2,000 paid. Now pay ₹5,000 income tax clearance fee.",15000.0,SEND,escalation_agent_1@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_015,escalation_scam,"Pay ₹5,000 customs GST charge to release your blocked prize package.",7500.0,SEND,escalation_agent_2@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_016,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",15000.0,SEND,escalation_agent_0@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_017,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",5000.0,SEND,escalation_agent_1@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_018,escalation_scam,"Pay ₹10,000 final release fee to receive promised ₹2,00,000 grant fund.",7500.0,SEND,escalation_agent_2@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_019,escalation_scam,"Verification fee ₹2,000 paid. Now pay ₹5,000 income tax clearance fee.",7500.0,SEND,escalation_agent_0@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_ESCALATION_020,escalation_scam,"Verification fee ₹2,000 paid. Now pay ₹5,000 income tax clearance fee.",15000.0,SEND,escalation_agent_1@upi,False,3,VERIFY,SEND,False,True,CRITICAL,CRITICAL,PAUSE
+SYN_LEGIT_001,legitimate,Paying ₹150 for tea and snacks.,150.0,SEND,trusted_merchant_0@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_002,legitimate,"Paid ₹2,500 monthly milk supply bill via UPI.",1200.0,SEND,trusted_merchant_1@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_003,legitimate,Paying ₹150 for tea and snacks.,1200.0,SEND,trusted_merchant_2@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_004,legitimate,Paying ₹150 for tea and snacks.,500.0,SEND,trusted_merchant_3@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_005,legitimate,Paying ₹150 for tea and snacks.,150.0,SEND,trusted_merchant_4@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_006,legitimate,Paying ₹450 for monthly grocery store bill at Sharma Kirana Store.,2500.0,SEND,trusted_merchant_5@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_007,legitimate,Sent ₹500 to Ramesh for lunch bill splitting.,500.0,SEND,trusted_merchant_6@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_008,legitimate,Paying ₹450 for monthly grocery store bill at Sharma Kirana Store.,500.0,SEND,trusted_merchant_7@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_009,legitimate,"Paid ₹2,500 monthly milk supply bill via UPI.",450.0,SEND,trusted_merchant_8@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_010,legitimate,"Paid ₹2,500 monthly milk supply bill via UPI.",150.0,SEND,trusted_merchant_9@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_011,legitimate,Sent ₹500 to Ramesh for lunch bill splitting.,2500.0,SEND,trusted_merchant_0@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_012,legitimate,"Electricity bill payment ₹1,200 due today for consumer account #9842.",2500.0,SEND,trusted_merchant_1@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_013,legitimate,Paying ₹450 for monthly grocery store bill at Sharma Kirana Store.,500.0,SEND,trusted_merchant_2@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_014,legitimate,Paying ₹150 for tea and snacks.,2500.0,SEND,trusted_merchant_3@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_015,legitimate,"Electricity bill payment ₹1,200 due today for consumer account #9842.",450.0,SEND,trusted_merchant_4@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_016,legitimate,Sent ₹500 to Ramesh for lunch bill splitting.,450.0,SEND,trusted_merchant_5@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_017,legitimate,Paying ₹150 for tea and snacks.,2500.0,SEND,trusted_merchant_6@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_018,legitimate,Paying ₹450 for monthly grocery store bill at Sharma Kirana Store.,2500.0,SEND,trusted_merchant_7@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_019,legitimate,Sent ₹500 to Ramesh for lunch bill splitting.,1200.0,SEND,trusted_merchant_8@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_020,legitimate,Paying ₹450 for monthly grocery store bill at Sharma Kirana Store.,150.0,SEND,trusted_merchant_9@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_021,legitimate,Sent ₹500 to Ramesh for lunch bill splitting.,500.0,SEND,trusted_merchant_0@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_022,legitimate,"Electricity bill payment ₹1,200 due today for consumer account #9842.",150.0,SEND,trusted_merchant_1@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_023,legitimate,"Electricity bill payment ₹1,200 due today for consumer account #9842.",2500.0,SEND,trusted_merchant_2@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_024,legitimate,Paying ₹450 for monthly grocery store bill at Sharma Kirana Store.,150.0,SEND,trusted_merchant_3@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_025,legitimate,"Paid ₹2,500 monthly milk supply bill via UPI.",150.0,SEND,trusted_merchant_4@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_026,legitimate,Paying ₹150 for tea and snacks.,450.0,SEND,trusted_merchant_5@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_027,legitimate,"Electricity bill payment ₹1,200 due today for consumer account #9842.",1200.0,SEND,trusted_merchant_6@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_028,legitimate,Paying ₹150 for tea and snacks.,450.0,SEND,trusted_merchant_7@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_029,legitimate,Sent ₹500 to Ramesh for lunch bill splitting.,2500.0,SEND,trusted_merchant_8@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_030,legitimate,Paying ₹150 for tea and snacks.,1200.0,SEND,trusted_merchant_9@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_031,legitimate,"Electricity bill payment ₹1,200 due today for consumer account #9842.",2500.0,SEND,trusted_merchant_0@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_032,legitimate,"Electricity bill payment ₹1,200 due today for consumer account #9842.",500.0,SEND,trusted_merchant_1@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_033,legitimate,"Paid ₹2,500 monthly milk supply bill via UPI.",500.0,SEND,trusted_merchant_2@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_034,legitimate,"Paid ₹2,500 monthly milk supply bill via UPI.",2500.0,SEND,trusted_merchant_3@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_LEGIT_035,legitimate,"Paid ₹2,500 monthly milk supply bill via UPI.",150.0,SEND,trusted_merchant_4@upi,False,8,SEND,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_001,ambiguous,Good morning! Have a great day ahead.,200.0,SEND,friend_0@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_002,ambiguous,Meeting at 4 PM near central park station.,500.0,SEND,friend_1@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_003,ambiguous,Meeting at 4 PM near central park station.,1000.0,SEND,friend_2@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_004,ambiguous,Good morning! Have a great day ahead.,1000.0,SEND,friend_3@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_005,ambiguous,Good morning! Have a great day ahead.,200.0,SEND,friend_4@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_006,ambiguous,Meeting at 4 PM near central park station.,1000.0,SEND,friend_0@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_007,ambiguous,Meeting at 4 PM near central park station.,200.0,SEND,friend_1@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_008,ambiguous,Meeting at 4 PM near central park station.,200.0,SEND,friend_2@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_009,ambiguous,Please call back when you are free.,200.0,SEND,friend_3@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_010,ambiguous,Good morning! Have a great day ahead.,500.0,SEND,friend_4@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_011,ambiguous,Order #8492 has been dispatched by courier.,200.0,SEND,friend_0@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_012,ambiguous,Good morning! Have a great day ahead.,1000.0,SEND,friend_1@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_013,ambiguous,Order #8492 has been dispatched by courier.,200.0,SEND,friend_2@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_014,ambiguous,Order #8492 has been dispatched by courier.,500.0,SEND,friend_3@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
+SYN_AMBIGUOUS_015,ambiguous,Good morning! Have a great day ahead.,200.0,SEND,friend_4@upi,False,2,UNKNOWN,SEND,False,False,NONE,LOW,ALLOW
