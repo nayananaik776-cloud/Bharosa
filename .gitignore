@@ -37,3 +37,20 @@ bharosa.db
 # OS
 .DS_Store
 Thumbs.db
+
+# Environment & Local Secrets
+.env
+.env.local
+.env.production
+!.env.example
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# IDE & System
+.vscode/
+.idea/
+
+# Logs
+*.log
