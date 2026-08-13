@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build & Dist outputs
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Environment & Local Secrets
+.env
+.env.local
+.env.production
+!.env.example
+
+# IDE & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
