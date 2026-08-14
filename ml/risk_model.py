@@ -79,6 +79,8 @@ class BharosaRiskModel:
 
         # Rule 1: CRITICAL INTENT MISMATCH (Receive vs Send)
         if intent_res.get("mismatch"):
+            if "INTENT_MISMATCH" not in scam_signals:
+                scam_signals.append("INTENT_MISMATCH")
             risk_level = "CRITICAL"
             decision = "PAUSE"
             risk_score = max(risk_score, 0.95)
@@ -95,6 +97,8 @@ class BharosaRiskModel:
 
         # Rule 2: PAYMENT ESCALATION DETECTED
         elif escalation_res.get("escalation_detected"):
+            if "PAYMENT_ESCALATION" not in scam_signals:
+                scam_signals.append("PAYMENT_ESCALATION")
             risk_level = "CRITICAL"
             decision = "PAUSE"
             risk_score = max(risk_score, 0.90)
@@ -111,8 +115,10 @@ class BharosaRiskModel:
 
         # Rule 3: ADVANCE FEE / PAYMENT BEFORE BENEFIT
         elif promise_res.get("payment_before_benefit"):
+            if "ADVANCE_FEE_REQUEST" not in scam_signals:
+                scam_signals.append("ADVANCE_FEE_REQUEST")
             risk_level = "HIGH"
-            decision = "VERIFY"
+            decision = "PAUSE"
             risk_score = max(risk_score, 0.75)
             req = promise_res.get("requested_amount", 0)
             prom = promise_res.get("promised_amount", 0)
