@@ -101,21 +101,18 @@ h1, h2, h3, h4, h5, h6 {
   align-items: start;
 }
 
-@media (max-width: 960px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Phone Simulator Frame */
 .phone-wrapper {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .phone-frame {
-  width: 360px;
-  height: 720px;
+  width: 100%;
+  max-width: 380px;
+  height: min(720px, 85vh);
+  min-height: 580px;
   background: #0f172a;
   border: 10px solid #1e293b;
   border-radius: 44px;
@@ -124,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .phone-notch {
@@ -159,6 +157,62 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   position: relative;
 }
+
+/* Media Queries for Tablet and Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 340px 1fr;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .phone-frame {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-container {
+    padding: 0.75rem 0.5rem 2rem 0.5rem;
+  }
+
+  .phone-frame {
+    max-width: 100%;
+    border-width: 6px;
+    border-radius: 28px;
+    height: auto;
+    min-height: 540px;
+    max-height: 85vh;
+  }
+
+  .phone-screen {
+    padding: 2rem 0.75rem 0.85rem 0.75rem;
+  }
+
+  .phone-notch {
+    width: 110px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.88rem;
+  }
+}
+
 
 /* Simulated UPI Header */
 .upi-header {

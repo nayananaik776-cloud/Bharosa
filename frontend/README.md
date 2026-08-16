@@ -6,9 +6,17 @@ Built for Track 2 (Fraud Detection & Financial Crime Prevention, Problem #4: Rea
 
 ---
 
+## 🚀 Live Links
+
+- 🌐 **Live Demo (Vercel)**: [https://bharosa-zeta.vercel.app/](https://bharosa-zeta.vercel.app/)
+- ⚙️ **Backend API (Render)**: [https://bharosa-k0mp.onrender.com](https://bharosa-k0mp.onrender.com)
+- 📖 **API Docs (Swagger UI)**: [https://bharosa-k0mp.onrender.com/docs](https://bharosa-k0mp.onrender.com/docs)
+
+---
+
 ## Key Features
 
-- **Simulated UPI Payment App (`Bharosa Pay`)**: Realistic mobile phone interface rendering incoming messages, recipient details, payment amount, and purpose.
+- **Simulated UPI Payment App (`Bharosa Pay`)**: Realistic mobile phone interface rendering incoming messages, recipient details, payment amount, and purpose. Fully mobile and tablet friendly.
 - **Judge Demo Control Panel (`TRY DEMO`)**: One-click scenario buttons enabling immediate testing without typing:
   1. **Refund QR Scam**: Intent Mismatch (Claims RECEIVE ₹5,000, transaction SEND ₹5,000).
   2. **Pension Fee Scam**: Advance-Fee Risk (Demands ₹2,000 upfront for promised ₹50,000 pension).
@@ -30,7 +38,7 @@ Built for Track 2 (Fraud Detection & Financial Crime Prevention, Problem #4: Rea
 Create a `.env` file inside `frontend/`:
 
 ```bash
-VITE_API_BASE_URL=http://localhost:8000
+VITE_API_BASE_URL=https://bharosa-k0mp.onrender.com
 ```
 
 Refer to `.env.example` for reference.
@@ -65,3 +73,4 @@ npm run build
 - **API Payload Contract**:
   - **Request**: `message`, `recipient` `{name, upi_id}`, `transaction` `{amount, type, purpose}`, `intent` `{believed_action, promised_benefit, promised_amount}`, `payment_history`.
   - **Response**: `risk_level`, `action`, `explanation`, `signals`, `details`, `voice_warning`.
+

@@ -25,7 +25,8 @@ export const JudgeDemoBar: React.FC<JudgeDemoBarProps> = ({
 
   return (
     <div className="glass-card" style={{ padding: '1.25rem', marginBottom: '1.5rem', borderLeft: '4px solid #6366f1' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.85rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.85rem' }}>
+
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <PlayCircle size={22} color="#818cf8" />
           <h2 style={{ fontSize: '1.15rem', fontWeight: 700, margin: 0, color: '#ffffff' }}>

@@ -23,7 +23,8 @@ export const ApiInspector: React.FC<ApiInspectorProps> = ({ request, response })
 
   return (
     <div className="glass-card" style={{ padding: '1.25rem', marginTop: '1.5rem' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.85rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.85rem' }}>
+
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <Code size={20} color="#818cf8" />
           <h3 style={{ fontSize: '1rem', fontWeight: 700, margin: 0, color: '#ffffff' }}>
