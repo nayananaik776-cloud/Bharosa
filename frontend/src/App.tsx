@@ -74,6 +74,7 @@ export const App: React.FC = () => {
   const [isOffline, setIsOffline] = useState<boolean>(false);
   const [paymentCompleted, setPaymentCompleted] = useState<boolean>(false);
   const [isBackendConnected, setIsBackendConnected] = useState<boolean>(false);
+  const [activeMobileTab, setActiveMobileTab] = useState<'app' | 'inspector'>('app');
 
   // Initial trigger for active scenario
   useEffect(() => {
@@ -137,10 +138,27 @@ export const App: React.FC = () => {
         onSelectScenario={handleSelectScenario}
       />
 
+      {/* Mobile Tab Switcher Bar (visible only on mobile devices) */}
+      <div className="mobile-tab-bar">
+        <button
+          className={`mobile-tab-btn ${activeMobileTab === 'app' ? 'active' : ''}`}
+          onClick={() => setActiveMobileTab('app')}
+        >
+          📱 Payment Simulator
+        </button>
+        <button
+          className={`mobile-tab-btn ${activeMobileTab === 'inspector' ? 'active' : ''}`}
+          onClick={() => setActiveMobileTab('inspector')}
+        >
+          🔍 Signals & API Inspector
+        </button>
+      </div>
+
       {/* Main Grid: Phone Simulator & Explainer Dashboard */}
       <div className="main-grid">
         {/* Left Column: Phone App Simulator */}
-        <div>
+        <div className={`grid-col-left ${activeMobileTab === 'app' ? 'mobile-visible' : 'mobile-hidden'}`}>
+
           {paymentCompleted ? (
             <div className="phone-wrapper">
               <div className="phone-frame" style={{ justifyContent: 'center', alignItems: 'center', padding: '2rem', textAlign: 'center' }}>
@@ -173,7 +191,8 @@ export const App: React.FC = () => {
         </div>
 
         {/* Right Column: Context Explainer & API Inspector */}
-        <div>
+        <div className={`grid-col-right ${activeMobileTab === 'inspector' ? 'mobile-visible' : 'mobile-hidden'}`}>
+
           {/* Key Product Value Card */}
           <div className="glass-card" style={{ padding: '1.25rem', marginBottom: '1rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.65rem' }}>
