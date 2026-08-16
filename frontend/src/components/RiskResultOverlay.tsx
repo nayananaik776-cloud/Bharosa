@@ -135,7 +135,8 @@ export const RiskResultOverlay: React.FC<RiskResultOverlayProps> = ({
       )}
 
       {/* Action Buttons */}
-      <div style={{ display: 'flex', gap: '0.65rem', marginTop: '1rem' }}>
+      <div className="overlay-actions" style={{ display: 'flex', gap: '0.65rem', marginTop: '1rem' }}>
+
         {result.action === 'PAUSE' || result.risk_level === 'HIGH' || result.risk_level === 'CRITICAL' ? (
           <>
             <button

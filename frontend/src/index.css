@@ -173,45 +173,80 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .phone-frame {
-    max-width: 400px;
+    max-width: 440px;
   }
 }
 
 @media (max-width: 640px) {
   .app-container {
-    padding: 0.75rem 0.5rem 2rem 0.5rem;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+  }
+
+  .header-container {
+    padding: 0.85rem 1rem !important;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between !important;
+  }
+
+  .demo-scenarios-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
   }
 
   .phone-frame {
+    width: 100%;
     max-width: 100%;
-    border-width: 6px;
-    border-radius: 28px;
+    border-width: 4px;
+    border-radius: 24px;
     height: auto;
-    min-height: 540px;
-    max-height: 85vh;
+    min-height: 520px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   }
 
   .phone-screen {
-    padding: 2rem 0.75rem 0.85rem 0.75rem;
+    padding: 1.75rem 0.65rem 0.75rem 0.65rem;
   }
 
   .phone-notch {
-    width: 110px;
-    height: 20px;
+    width: 100px;
+    height: 18px;
+  }
+
+  .overlay-actions {
+    flex-direction: column;
+    gap: 0.5rem !important;
+  }
+
+  .overlay-actions button {
+    width: 100% !important;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
+  .demo-scenarios-grid {
+    grid-template-columns: 1fr !important;
+  }
+
   .badge {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.7rem;
+    padding: 0.2rem 0.45rem;
+    font-size: 0.68rem;
   }
 
   .btn {
-    padding: 0.65rem 1rem;
-    font-size: 0.88rem;
+    padding: 0.6rem 0.85rem;
+    font-size: 0.85rem;
   }
 }
+
 
 
 /* Simulated UPI Header */

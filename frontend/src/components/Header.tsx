@@ -8,8 +8,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ isBackendConnected, onReset }) => {
   return (
-    <header className="glass-card" style={{ padding: '1rem 1.5rem', marginBottom: '1rem' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+    <header className="glass-card header-container" style={{ padding: '1rem 1.5rem', marginBottom: '1rem' }}>
+      <div className="header-content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
           <div style={{
             background: 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)',
@@ -33,7 +33,8 @@ export const Header: React.FC<HeaderProps> = ({ isBackendConnected, onReset }) =
           </div>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <div className="header-actions" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+
           <div style={{
             display: 'flex',
             alignItems: 'center',

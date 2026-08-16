@@ -38,7 +38,8 @@ export const JudgeDemoBar: React.FC<JudgeDemoBarProps> = ({
         </span>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.85rem' }}>
+      <div className="demo-scenarios-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.85rem' }}>
+
         {scenarios.map((scenario) => {
           const isActive = activeScenarioId === scenario.id;
           return (
